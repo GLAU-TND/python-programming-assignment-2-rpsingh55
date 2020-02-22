@@ -1,7 +1,8 @@
 
+lst = eval(input())
+lst_new = list(map(str, lst))
 from itertools import permutations
-l=list(map(str,input().split()))
-p=list(permutations(l)):
+p=list(permutations(lst_new))
 max=0
 for i in p:
 	s=""
@@ -10,4 +11,3 @@ for i in p:
 	if int(s)>max:
 		max=int(s)
 print(max)
-
