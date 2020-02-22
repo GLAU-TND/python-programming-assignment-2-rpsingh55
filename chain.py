@@ -1,4 +1,5 @@
-t=list(map(str,input().split()))
+lst = eval(input())
+t = list(map(str, lst))
 c=[t[0]]
 for i in range(len(t)):
 	for j in range(0,len(t)):
